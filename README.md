@@ -13,7 +13,7 @@ $ docker build -t <CONTAINER_NAME> .
 
 1. prepare a directory, `<OUTPUT_DIRECTORY>`, for your output data, i.e. /home/yoyo/outputs
 2. prepare your input dfile and NSTA.DAT, put it at home directory
-3. run follow command
+3. run follow command, use full directory path for mounting the volume
 ```
 $ docker run -it -v <DFILE_NAME>:/file_transformer/dfile -v <NSTA.DAT>:/file_transformer/NSTA.DAT -v <OUTPUT_DIRECTORY>:/tmp/ <CONTAINER_NAME> dfile2sac dfile <YEAR> <MONTH> <DAY>
 ```
