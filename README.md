@@ -3,7 +3,7 @@
 
 ## Build the docker container
 
-go to the home directory of this repo, and stay at here :octo_cat:
+go to the home directory of this repo, and stay at here :octocat:
 
 ```
 $ docker build -t <CONTAINER_NAME> .
