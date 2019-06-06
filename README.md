@@ -6,7 +6,7 @@
 go to the home directory of this repo, and stay at here :octocat:
 
 ```
-$ docker build -t <CONTAINER_NAME> .
+$ docker build -t <IMAGE_NAME> .
 ```
 
 ## RUN!
@@ -15,5 +15,5 @@ $ docker build -t <CONTAINER_NAME> .
 2. prepare your input dfile and NSTA.DAT, put it at home directory
 3. run follow command, use full directory path for mounting the volume
 ```
-$ docker run -it -v <DFILE_NAME>:/file_transformer/dfile -v <NSTA.DAT>:/file_transformer/NSTA.DAT -v <OUTPUT_DIRECTORY>:/tmp/ <CONTAINER_NAME> dfile2sac dfile <YEAR> <MONTH> <DAY>
+$ docker run -it -v <DFILE_NAME>:/file_transformer/dfile -v <NSTA.DAT>:/file_transformer/NSTA.DAT -v <OUTPUT_DIRECTORY>:/tmp/ <IMAGE_NAME> dfile2sac dfile <YEAR> <MONTH> <DAY>
 ```
